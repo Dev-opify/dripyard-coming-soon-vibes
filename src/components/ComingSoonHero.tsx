@@ -49,7 +49,7 @@ const ComingSoonHero = () => {
             <Input
               type="email"
               placeholder="Enter your email"
-              value={"dev.dripyard@gmail.com"}
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="flex-1 bg-secondary/50 border-border/50 text-foreground placeholder:text-muted-foreground backdrop-blur-sm"
               required
