@@ -14,26 +14,20 @@ const VideoBackground = () => {
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Background image with video fallback */}
-      <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/src/assets/hero-bg.jpg')`
-        }}
-      />
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover opacity-70"
+        className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         muted
         loop
         playsInline
         onError={() => {
-          // Video failed to load, rely on background image
-          console.log('Video failed to load, using background image');
+          console.log('Video failed to load');
         }}
       >
-        <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9a1c3d9&profile_id=165&oauth2_token_id=57447761" type="video/mp4" />
+        {/* Using a reliable video source */}
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+        <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 video-overlay" />
     </div>
