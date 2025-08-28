@@ -144,9 +144,9 @@
   .video-overlay {
     background: linear-gradient(
       45deg,
-      hsl(var(--background) / 0.8) 0%,
-      hsl(var(--background) / 0.6) 50%,
-      hsl(var(--background) / 0.9) 100%
+      hsl(var(--background) / 0.2) 0%,
+      hsl(var(--background) / 0.1) 50%,
+      hsl(var(--background) / 0.3) 100%
     );
   }
 
