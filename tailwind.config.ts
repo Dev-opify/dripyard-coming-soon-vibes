@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				heading: ['var(--font-heading)'],
+				body: ['var(--font-body)'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +55,11 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				brand: {
+					neon: 'hsl(var(--brand-neon))',
+					gold: 'hsl(var(--brand-gold))',
+					purple: 'hsl(var(--brand-purple))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
